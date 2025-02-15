@@ -229,6 +229,14 @@ that will not be executed atomically.
 ]]>
      </Details>
   </Detector>
+  <Detector class="edu.umd.cs.findbugs.detect.ResourceInMultipleThreadsDetector">
+    <Details>
+      <![CDATA[
+<p> 查找多线程环境下没有合适同步的非原子类型资源。
+    </p>
+]]>
+    </Details>
+  </Detector>
   <Detector class="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant">
     <Details>
 <![CDATA[
@@ -570,6 +578,14 @@ that will not be executed atomically.
 <p>检查格式字符串是否不正确  Checks for incorrect format strings. 
 </p>
 ]]>
+    </Details>
+  </Detector>
+  <Detector class="edu.umd.cs.findbugs.detect.DateFormatStringChecker">
+    <Details>
+      <![CDATA[
+      <p> 检查错误的日期格式字符串。
+      </p>
+      ]]>
     </Details>
   </Detector>
   <Detector class="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis">
@@ -1839,6 +1855,27 @@ that have Exception or Throwable in their throws clause. </p>
       ]]>
     </Details>
   </Detector>
+  <Detector class="edu.umd.cs.findbugs.detect.SharedVariableAtomicityDetector">
+    <Details>
+      <![CDATA[
+              <p>
+                查找无法保证原子性的变量，
+                当多线程使用成员变量，但是未使用同步时。
+              </p>
+        ]]>
+    </Details>
+  </Detector>
+  <Detector class="edu.umd.cs.findbugs.detect.FindHiddenMethod">
+    <Details>
+      <![CDATA[
+            <p>
+              查找被子类隐藏的static，非私有方法，
+              main 方法，构造方法，内部类，自动生成的方法为例外。
+            </p>
+      ]]>
+    </Details>
+  </Detector>
+
   <!--
   **********************************************************************
   BugPatterns
@@ -2566,33 +2603,42 @@ that have Exception or Throwable in their throws clause. </p>
     <ShortDescription>只应在doPrivileged块内调用的已调用方法  Method invoked that should be only be invoked inside a doPrivileged block</ShortDescription>
     <LongDescription>{2}的调用，应该从{1}中的doPrivileged块中调用</LongDescription>
     <Details>
-<![CDATA[
-<p>此代码调用需要安全权限检查的方法。如果此代码将被授予安全权限，但可能被没有安全权限的代码调用，则调用需要在doPrivileged块内进行</p>]]>
-
-
-
+      <![CDATA[
+        <p> 代码调用了需要安全权限检查的方法。
+        如果代码会被授权安全权限，但是可能被没有安全授权的代码调用，
+        调用就需要包含在 doPrivileged 中。</p>
+        <code>java.security.AccessController</code> 类包含了 <code>doPrivileged</code> 方法，
+        在 Java 17 中标记为废弃 (参考 <a href="https://openjdk.org/jeps/411">JEP 411</a>)，将在 Java 24 中删除 (参考 <a href="https://openjdk.org/jeps/486">JEP 486</a>)。
+        因此，编译目标为 Java 17 及以上版本不会报告这个 bug。
+      ]]>
     </Details>
   </BugPattern>
   <BugPattern type="DP_DO_INSIDE_DO_PRIVILEDGED"> <!-- misspelled for backward compatibility -->
     <ShortDescription>只应在doPrivileged块内调用的已调用方法  Method invoked that should be only be invoked inside a doPrivileged block</ShortDescription>
     <LongDescription>{2}的调用，应该从{1}中的doPrivileged块中调用</LongDescription>
     <Details>
-<![CDATA[
-<p>此代码调用需要安全权限检查的方法。如果此代码将被授予安全权限，但可能被没有安全权限的代码调用，则调用需要在doPrivileged块内进行</p>]]>
-
-
-
+      <![CDATA[
+        <p> 代码调用了需要安全权限检查的方法。
+        如果代码会被授权安全权限，但是可能被没有安全授权的代码调用，
+        调用就需要包含在 doPrivileged 中。</p>
+        <code>java.security.AccessController</code> 类包含了 <code>doPrivileged</code> 方法，
+        在 Java 17 中标记为废弃 (参考 <a href="https://openjdk.org/jeps/411">JEP 411</a>)，将在 Java 24 中删除 (参考 <a href="https://openjdk.org/jeps/486">JEP 486</a>)。
+        因此，编译目标为 Java 17 及以上版本不会报告这个 bug。
+      ]]>
     </Details>
   </BugPattern>
   <BugPattern type="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED">
     <ShortDescription>Classloader只能在doPrivileged块内创建  Classloaders should only be created inside doPrivileged block</ShortDescription>
     <LongDescription>{1} 创建{2}类加载器，它应该在doPrivileged块中执行</LongDescription>
     <Details>
-<![CDATA[
-<p>这段代码创建了一个类加载器，如果安装了安全管理，它需要权限。如果此代码可能被没有安全权限的代码调用，那么类加载器的创建需要在doPrivileged块中进行</p>]]>
-
-
-
+      <![CDATA[
+        <p> 代码创建一个类加载类 ClassLaoder，如果安装了安全管理器则需要授权。
+        如果代码可能被没有安全授权的代码调用，
+        创降类加载器的操作就需要包含在 doPrivileged 中。</p>
+        <code>java.security.AccessController</code> 类包含了 <code>doPrivileged</code> 方法，
+        在 Java 17 中标记为废弃 (参考 <a href="https://openjdk.org/jeps/411">JEP 411</a>)，将在 Java 24 中删除 (参考 <a href="https://openjdk.org/jeps/486">JEP 486</a>)。
+        因此，编译目标为 Java 17 及以上版本不会报告这个 bug。
+      ]]>
     </Details>
   </BugPattern>
   <BugPattern type="JCIP_FIELD_ISNT_FINAL_IN_IMMUTABLE_CLASS">
@@ -7502,6 +7548,39 @@ boolean hasSpace(String m) {
 ]]>
      </Details>
   </BugPattern>
+  <BugPattern type="FS_BAD_DATE_FORMAT_FLAG_COMBO">
+    <ShortDescription>日期格式字符串可能导致意料之外的行为</ShortDescription>
+    <LongDescription>{1.nameAndSignature} 中的 '{3}' 日期格式字符串可能导致意料之外的行为</LongDescription>
+    <Details>
+      <![CDATA[
+      <p>
+      格式字符串包含了错误的标记组合，可能导致意料之外的行为。
+      可能的错误组合包含以下情况：
+      <ul>
+        <li>
+          把周年("Y")和月份("M")和每月日期("d")时，
+          未使用每年周数("w")。这里可能更适合使用("y")标记。
+        </li>
+        <li>
+          使用 AM/PM 小时（12小时）("h" 或 "K")时，
+          未指定 AM/PM 标记 ("a") 或 日期周期标记 ("B")。
+        </li>
+        <li>
+          使用24小时格式 ("H" or "k")时，指定了 AM/PM 标记 或 日期周期标记。
+        </li>
+        <li>
+          使用每天的微秒 ("A") 时，使用了小时 ("H", "h", "K", "k")
+          和/或分钟 ("m") 和/或 秒 ("s")。
+        </li>
+        <li>把每天的微秒 ("A") 和每天的纳秒 ("N") 一起使用</li>
+        <li>把分钟秒 ("S") 和纳米秒 ("n") 一起使用</li>
+        <li>把 AM/PM 标记 ("a") 和日期周期 ("B") 一起使用</li>
+        <li>把年份 ("y") 和年代 ("u") 一起使用</li>
+      </ul>
+     </p>
+      ]]>
+    </Details>
+  </BugPattern>
   <BugPattern type="VA_PRIMITIVE_ARRAY_PASSED_TO_OBJECT_VARARG">
     <ShortDescription>传递给函数的基元数组需要数量可变的对象参数  Primitive array passed to function expecting a variable number of object arguments</ShortDescription>
     <LongDescription>{2} 传递给{1}中的varargs方法{3}</LongDescription>
@@ -8672,6 +8751,21 @@ Martin Buchholz <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=641
 
       </Details>
   </BugPattern>
+  <BugPattern type="AT_UNSAFE_RESOURCE_ACCESS_IN_THREAD">
+    <ShortDescription>Operation on resource is not safe in a multithreaded context</ShortDescription>
+    <LongDescription>Operation on resource {3} is not safe in a multithreaded context in {1}</LongDescription>
+    <Details>
+      <![CDATA[
+        <p>代码包含了在多线程环境下不安全的对资源的操作方法。
+          这个资源可能被多线程同步访问时没有进行合适的同步。
+          这样可能导致数据损坏。应该使用同步或其他同步控制机制，
+          确保资源访问是安全的。</p>
+        <p>参考相关的 SEI CERT 规则，但这个检测器不只限于链式方法：
+          <a href="https://wiki.sei.cmu.edu/confluence/display/java/VNA04-J.+Ensure+that+calls+to+chained+methods+are+atomic">
+          VNA04-J. 确保链式方法的调用是原子性的</a>。
+        </p>]]>
+    </Details>
+  </BugPattern>
   <BugPattern type="DM_DEFAULT_ENCODING">
     <ShortDescription>依赖默认编码  Reliance on default encoding</ShortDescription>
     <LongDescription>在{1}:{2}中发现对默认编码的依赖</LongDescription>
@@ -9004,7 +9098,11 @@ Martin Buchholz <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=641
 
 
       参考 SEI CERT 规则 <a href="https://wiki.sei.cmu.edu/confluence/display/java/SEC02-J.+Do+not+base+security+checks+on+untrusted+sources">SEC02-J。不要基于不可信来源的潜在安全检查。</a>.
-      </p>]]>
+      </p>
+      包含<code>doPrivileged</code> 方法的 <code>java.security.AccessController</code> 类，
+      在 Java 17 中标记为废弃 (参考 <a href="https://openjdk.org/jeps/411">JEP 411</a>)，将在 Java 24 中删除 (参考 <a href="https://openjdk.org/jeps/486">JEP 486</a>)。
+      因此，编译目标为 Java 17 及以上版本不会报告这个 bug。
+      ]]>
     </Details>
   </BugPattern>
 
@@ -9122,6 +9220,25 @@ Martin Buchholz <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=641
         <p>
         参考 SEI CERT 规则 <a href="https://wiki.sei.cmu.edu/confluence/display/java/MET01-J.+Never+use+assertions+to+validate+method+arguments">MET01-J。不要使用断言校验方法参数</a>
         了解更多信息。
+        </p>
+        ]]>
+    </Details>
+  </BugPattern>
+  <BugPattern type="HSM_HIDING_METHOD">
+    <ShortDescription>应该避免隐藏方法</ShortDescription>
+    <LongDescription>'{0.simpleName}' 类中的 '{1.nameAndSignature}'方法隐藏了'{2.simpleName}'类的一个方法。把相关方法声明为非静态(non-static)或私有(private)可以消除这个问题。</LongDescription>
+    <Details>
+      <![CDATA[
+        隐藏行为发生在子类定义了一个静态方法，
+        使用相关头部（签名和返回类型）与任一超类中的方法相同。
+        隐藏方法的行为在调用时的行为是基于特定名称
+        或调用方使用的方法调用表达式的。
+        结果经常是难以预料的，虽然 Java 语言对方法隐藏提供了确定的规则。
+        此外，方法隐藏和方法重载也经常使程序员感到迷惑。
+        因此，程序员应该避免方法隐藏。
+        程序员应该把相关方法声明为非静态(non-static)或私有(private)来解决这个问题。
+        <p>
+        参考 SEI CERT 规则 <a href="https://wiki.sei.cmu.edu/confluence/display/java/MET07-J.+Never+declare+a+class+method+that+hides+a+method+declared+in+a+superclass+or+superinterface">MET07-J. 不要声明会隐藏父类或父接口中方法的子类方法</a>。
         </p>
         ]]>
     </Details>
@@ -9267,6 +9384,62 @@ Martin Buchholz <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=641
       <p>
       See SEI CERT rule <a href="https://wiki.sei.cmu.edu/confluence/display/java/ENV02-J.+Do+not+trust+the+values+of+environment+variables">ENV02-J. Do not trust the values of environment variables</a>.
       </p>]]>
+    </Details>
+  </BugPattern>
+  <BugPattern type="AT_NONATOMIC_64BIT_PRIMITIVE">
+    <ShortDescription>这个64位原始类型变量的写入可能不是原子性的</ShortDescription>
+    <LongDescription>这个64位原始类型变量 "{2.name}" 的写入可能不是原子性的</LongDescription>
+    <Details>
+      <![CDATA[
+        <p>
+          long 和 double 是64位原始类型，根据 Java 虚拟机实现，为它们分配值，可以被处理为两个独立的32位写入，这个操作不是原子性的。
+          参考 <a href="https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.7">JSL 17.7. 非原子性处理 double 和 long</a>.
+          参考 SEI CERT 规则 <a href="https://wiki.sei.cmu.edu/confluence/display/java/VNA05-J.+Ensure+atomicity+when+reading+and+writing+64-bit+values">VNA05-J. 读写64位数值时要考虑原子性</a> 了解更多信息。
+
+          在保证64位 long 和 double 类型读写操作原子性的平台下，可以忽略这个bug。
+        </p>
+        <p>
+          修复方法，可以把变量声明为易失的(volatile)，把属性类型修改为对应的 <code>java.lang.concurrent.atomic</code> 原子类型，或正确的同步代码。 
+          声明易失(volatile)在一些场景下可能并不足够：比如，变量对自己赋值，或使用非原子性的组合操作结果。
+        </p>
+     ]]>
+    </Details>
+  </BugPattern>
+  <BugPattern type="AT_STALE_THREAD_WRITE_OF_PRIMITIVE">
+    <ShortDescription>对共享原始类型变量的写入可能对其他线程不可见</ShortDescription>
+    <LongDescription>一个线程的共享原始类型变量 "{2.name}" 可能不会获取到其他线程的最新写入值</LongDescription>
+    <Details>
+      <![CDATA[
+        <p>
+          <a href="https://wiki.sei.cmu.edu/confluence/display/java/VNA00-J.+Ensure+visibility+when+accessing+shared+primitive+variables">SEI CERT 规则 VNA00-J</a>
+          描述了读取一个线程的共享原始类型变量，可能不会获取到其他线程的最新写入值
+          因此，线程可能获取到一个共享变量的旧值。
+        </p>
+        <p>
+          修复方法，把变量声明为易失的(volatile)，把属性类型修改为对应的 <code>java.lang.concurrent.atomic</code> 原子类型，或正确的同步代码。 
+          声明易失(volatile)在一些场景下可能并不足够：比如，变量对自己赋值，或使用非原子性的组合操作结果。
+          这可以保证64位原始类型 long 和 double 变量实现原子性操作。
+        </p>
+     ]]>
+    </Details>
+  </BugPattern>
+  <BugPattern type="AT_NONATOMIC_OPERATIONS_ON_SHARED_VARIABLE">
+    <ShortDescription>共享变量操作不是原子的性</ShortDescription>
+    <LongDescription>"{0.simpleName}" 类的共享变量 "{2.name}" 的操作不是原子性的</LongDescription>
+    <Details>
+      <![CDATA[
+        <p>
+          对函数共享变量的写入操作，依赖变量当前值（因为组合操作，比如 +=, ++, - 或单纯依赖当前值），因此它由多个离散操作组成。
+          这些操作不是原子性的，需要进一步同步。
+          参考 <a href="https://wiki.sei.cmu.edu/confluence/display/java/VNA02-J.+Ensure+that+compound+operations+on+shared+variables+are+atomic">SEI CERT 规则 VNA02-J</a>.
+
+          单纯把变量声明为易失的(volatile)无法保证对变量进行组合操作的原子性，
+          但是在声明变量易失的(volatile)进行读取的基础上，对写入操作进行同步是足够的。
+        <p>
+          为解决这个问题，同步组合操作和其他依赖前值的操作，
+          使用读写锁，或使用原子类型声明共享变量。
+        </p>
+     ]]>
     </Details>
   </BugPattern>
   <!--
@@ -9430,4 +9603,6 @@ Martin Buchholz <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=641
   <BugCode abbrev="AA">错误使用断言检查公开方法的参数</BugCode>
   <BugCode abbrev="PI">不要重用 Java 标准库的公开标识符</BugCode>
   <BugCode abbrev="ENV">使用环境变量替换了对应的 Java 属性</BugCode>
+  <BugCode abbrev="HSM">避免方法隐藏</BugCode>
 </MessageCollection>
+
