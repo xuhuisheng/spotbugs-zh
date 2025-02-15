@@ -1,0 +1,9433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+
+
+
+<Plugin>
+<ShortDescription></ShortDescription>
+<Details>
+
+
+
+
+
+</Details>
+<BugsUrl></BugsUrl>
+<AllBugsUrl></AllBugsUrl>
+</Plugin>
+<FindBugsMain cmd="addMessages" class="edu.umd.cs.findbugs.AddMessages">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="analyze" class="edu.umd.cs.findbugs.FindBugs2">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="gui" class="edu.umd.cs.findbugs.gui2.Driver">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="list" class="edu.umd.cs.findbugs.PrintingBugReporter">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="help" class="edu.umd.cs.findbugs.ShowHelp">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="version" class="edu.umd.cs.findbugs.Version">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="filter" class="edu.umd.cs.findbugs.workflow.Filter">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="set" class="edu.umd.cs.findbugs.workflow.SetBugDatabaseInfo">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="history" class="edu.umd.cs.findbugs.workflow.MineBugHistory">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="union" class="edu.umd.cs.findbugs.workflow.UnionResults">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="merge" class="edu.umd.cs.findbugs.workflow.Update">
+<Description></Description>
+</FindBugsMain>
+
+<FindBugsMain cmd="dis" class="edu.umd.cs.findbugs.workflow.PrintClass">
+<Description></Description>
+</FindBugsMain>
+<FindBugsMain cmd="errors" class="edu.umd.cs.findbugs.workflowListErrors">
+<Description></Description>
+</FindBugsMain>
+
+<!-- On changing this, please also update default cloud id in FindbugsPlugin -->
+<Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud">
+<Description></Description>
+<Details></Details>
+</Cloud>
+<PluginComponent id="edu.umd.cs.findbugs.bugReporter.SuppressMultithreaded">
+<Description></Description>
+<Details></Details>
+</PluginComponent>
+<PluginComponent id="edu.umd.cs.findbugs.bugReporter.SuppressI18N">
+<Description></Description>
+<Details></Details>
+</PluginComponent>
+<PluginComponent id="edu.umd.cs.findbugs.bugReporter.SelectivelySuppressI18N">
+<Description></Description>
+<Details></Details>
+</PluginComponent>
+<PluginComponent id="edu.umd.cs.findbugs.bugReporter.MaxRank14">
+<Description></Description>
+<Details></Details>
+</PluginComponent>
+<PluginComponent id="edu.umd.cs.findbugs.bugReporter.SuppressMalicious">
+<Description></Description>
+<Details></Details>
+</PluginComponent>
+
+
+
+
+
+<BugCategory category="CORRECTNESS">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details>
+
+</Details>
+</BugCategory>
+<BugCategory category="NOISE">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details>
+
+</Details>
+</BugCategory>
+<BugCategory category="SECURITY">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details>
+</Details>
+</BugCategory>
+<BugCategory category="BAD_PRACTICE">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details>
+
+
+
+
+
+</Details>
+</BugCategory>
+<BugCategory category="STYLE">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugCategory>
+<BugCategory category="PERFORMANCE">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details></Details>
+</BugCategory>
+<BugCategory category="MALICIOUS_CODE">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details></Details>
+</BugCategory>
+<BugCategory category="MT_CORRECTNESS">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details></Details>
+</BugCategory>
+<BugCategory category="I18N">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details></Details>
+</BugCategory>
+<BugCategory category="EXPERIMENTAL">
+<Description></Description>
+<Abbreviation></Abbreviation>
+<Details></Details>
+</BugCategory>
+
+
+
+
+
+
+<Detector class="edu.umd.cs.findbugs.detect.ConstructorThrow">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.OverridingMethodsMustInvokeSuperDetector">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindRoughConstants">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InitializeNonnullFieldsInConstructor">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.IntCast2LongAsInstant">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TrainLongInstantfParams">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InconsistentAnnotations">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.AtomicityProblem">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.SynchronizationOnSharedBuiltinConstant">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.SynchronizeAndNullCheckField">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CheckImmutableAnnotation">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.VarArgsProblems">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoteJCIPAnnotation">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BuildInterproceduralCallGraph">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoteSuppressedWarnings">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoteAnnotationRetention">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoteSyntheticElements">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.Methods">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ReflectiveClasses">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CalledMethods">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ConfusionBetweenInheritedAndOuterMethod">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoteCheckReturnValueAnnotations">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.SynchronizeOnClassLiteralNotGetClass">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FieldItemSummary">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoteNonNullAnnotations">
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoteUnconditionalParamDerefs">
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoteNonnullReturnValues">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BooleanReturnNull">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.OptionalReturnNull">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindUselessObjects">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.MutableEnum">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BadUseOfReturnValue">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InheritanceUnsafeGetResource">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InfiniteRecursiveLoop">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InfiniteLoop">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.VolatileUsage">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.EmptyZipFileEntry">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.UncallableMethodOfAnonymousClass">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DontUseEnum">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.URLProblems">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FinalizerNullsFields">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CrossSiteScripting">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.RepeatedConditionals">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.RedundantConditions">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CallToUnsupportedMethod">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FormatStringChecker">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TestingGround">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TestingGround2">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.LostLoggerDueToWeakReference">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TestingGround2">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.Noise">
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NoiseNullDeref">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.HugeSharedStringConstants">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DoInsideDoPrivileged">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ResolveAllReferences">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.SwitchFallthrough">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindSelfComparison">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindSelfComparison2">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindNonShortCircuit">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DontCatchIllegalMonitorStateException">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindFloatMath">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CloneIdiom">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.MultipleInstantiationsOfSingletons">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ThrowingExceptions">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ComparatorIdiom">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DroppedException">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DumbMethodInvocations">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DumbMethods">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CovariantArrayAssignment">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.NumberConstructor">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindDoubleCheck">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindFinalizeInvocations">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindHEmismatch">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindNakedNotify">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindReturnRef">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindRunInvocations">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindSpinLoop">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindTwoLockWait">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindUnconditionalWait">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindUninitializedGet">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindUnsyncGet">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InitializationChain">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.IteratorIdioms">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.LockedFields">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.EqStringTest">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.MutableLock">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.SynchronizingOnContentsOfFieldToProtectField">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.MutableStaticFields">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.Naming">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ReadReturnShouldBeChecked">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.SerializableIdiom">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.StartInConstructor">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindBadForLoop">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ExplicitSerialization">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.UnreadFields">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.WaitInLoop">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BCPMethodReturnCheck">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindComparatorProblems">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindNullDeref">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindNullDerefsInvolvingNonShortCircuitEvaluation">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindOpenStream">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.PreferZeroLengthArrays">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindUselessControlFlow">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindUnreleasedLock">
+<Details>
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindRefComparison">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindMismatchedWaitOrNotify">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindEmptySynchronizedBlock">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindInconsistentSync2">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindLocalSelfAssignment2">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.IncompatMask">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.LazyInit">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindJSR166LockMonitorenter">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindUncalledPrivateMethods">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.StringConcatenation">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InefficientInitializationInsideLoop">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InefficientIndexOf">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InefficientToArray">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InvalidJUnitTest">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BadlyOverriddenAdapter">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BadResultSetAccess">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.SuperfluousInstanceOf">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BadAppletConstructor">
+<Details>
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.SuspiciousThreadInterrupted">
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindSqlInjection">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindDeadLocalStores">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindMaskedFields">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.WrongMapIterator">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InstantiateStaticClass">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.RuntimeExceptionCapture">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DontCatchNullPointerException">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindFloatEquality">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindUnsatisfiedObligation">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.UnnecessaryMath">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindCircularDependencies">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.RedundantInterfaces">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.MultithreadedInstanceAccess">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.PublicSemaphores">
+<Details>
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.MethodReturnCheck">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.IDivResultCastToDouble">
+<Details>
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindBadCast2">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindNonSerializableStoreIntoSession">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+
+<Detector class="edu.umd.cs.findbugs.detect.FindUseOfNonSerializableValue">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+
+
+<Detector class="edu.umd.cs.findbugs.detect.FindNonSerializableValuePassedToWriteObject">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+
+
+
+<Detector class="edu.umd.cs.findbugs.detect.BadSyntaxForRegularExpression">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindPuzzlers">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindSleepWithLockHeld">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DuplicateBranches">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.InefficientMemberAccess">
+<Details>
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.XMLFactoryBypass">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.UselessSubclassMethod">
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ConfusedInheritance">
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.QuestionableBooleanAssignment">
+<Details>
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TrainNullReturnValues">
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TrainUnconditionalDerefParams">
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TrainFieldStoreTypes">
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TrainNonNullAnnotations">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CheckCalls">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindBugsSummaryStats">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TestASM">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ViewCFG">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindUnrelatedTypesInGenericContainer">
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.StaticCalendarDetector">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.TestDataflowAnalysis">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CheckTypeQualifiers">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.AppendingToAnObjectOutputStream">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CheckExpectedWarnings">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DontIgnoreResultOfPutIfAbsent">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+
+
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DefaultEncodingDetector">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DontAssertInstanceofInTests">
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindBadEndOfStreamCheck">
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.ReflectionIncreaseAccessibility">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindOverridableMethodCall">
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindInstanceLockOnSharedStaticData">
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DontUseFloatsAsLoopCounters">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.PermissionsSuper">
+<Details>
+
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindPotentialSecurityCheckBasedOnUntrustedSource">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindAssertionsWithSideEffects">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindPublicAttributes">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindVulnerableSecurityCheckMethods">
+<Details>
+
+
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.FindArgumentAssertions">
+<Details>
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.DontReusePublicIdentifiers">
+<Details>
+
+
+
+
+</Details>
+</Detector>
+<Detector class="edu.umd.cs.findbugs.detect.UnnecessaryEnvUsage">
+<Details>
+
+
+
+
+
+</Details>
+</Detector>
+
+
+
+
+
+<BugPattern type="CT_CONSTRUCTOR_THROW">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/OBJ11-J.+Be+wary+of+letting+constructors+throw+exceptions"></a>
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+<a href="https://junit.org/junit4/javadoc/latest/index.html?org/hamcrest/core/IsInstanceOf.html"></a>
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="OVERRIDING_METHODS_MUST_INVOKE_SUPER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details></BugPattern>
+<BugPattern type="CNT_ROUGH_CONSTANT_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SKIPPED_CLASS_TOO_BIG">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NOISE_NULL_DEREFERENCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NOISE_METHOD_CALL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NOISE_FIELD_REFERENCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NOISE_OPERATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="DMI_DOH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="DMI_VACUOUS_CALL_TO_EASYMOCK_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_SCHEDULED_THREAD_POOL_EXECUTOR_WITH_ZERO_CORE_THREADS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledThreadPoolExecutor.html#ScheduledThreadPoolExecutor-int-"></a>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_FUTILE_ATTEMPT_TO_CHANGE_MAXPOOL_SIZE_OF_SCHEDULED_THREAD_POOL_EXECUTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledThreadPoolExecutor.html"></a>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_UNSUPPORTED_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_EMPTY_DB_PASSWORD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_CONSTANT_DB_PASSWORD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HRS_REQUEST_PARAMETER_TO_COOKIE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="http://en.wikipedia.org/wiki/HTTP_response_splitting"></a>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HRS_REQUEST_PARAMETER_TO_HTTP_HEADER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="http://en.wikipedia.org/wiki/HTTP_response_splitting"></a>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+
+
+<BugPattern type="PT_RELATIVE_PATH_TRAVERSAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+<a href="http://cwe.mitre.org/data/definitions/23.html"></a>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="PT_ABSOLUTE_PATH_TRAVERSAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+<a href="http://cwe.mitre.org/data/definitions/36.html"></a>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="XSS_REQUEST_PARAMETER_TO_SERVLET_WRITER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="http://en.wikipedia.org/wiki/Cross-site_scripting"></a>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+
+<BugPattern type="XSS_REQUEST_PARAMETER_TO_SEND_ERROR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+<a href="http://en.wikipedia.org/wiki/Cross-site_scripting"></a>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="XSS_REQUEST_PARAMETER_TO_JSP_WRITER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="http://en.wikipedia.org/wiki/Cross-site_scripting"></a>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SW_SWING_METHODS_INVOKED_IN_SWING_THREAD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+<a href="http://web.archive.org/web/20090526170426/http://java.sun.com/developer/JDCTechTips/2003/tt1208.html"></a>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IL_INFINITE_LOOP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IL_INFINITE_RECURSIVE_LOOP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IL_CONTAINER_ADDED_TO_ITSELF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="VO_VOLATILE_REFERENCE_TO_ARRAY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="VO_VOLATILE_INCREMENT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UI_INHERITANCE_UNSAFE_GETRESOURCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_BOOLEAN_RETURN_NULL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_OPTIONAL_RETURN_NULL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NONNULL_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_SYNC_AND_NULL_CHECK_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RpC_REPEATED_CONDITIONAL_TEST">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TESTING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TESTING1">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TESTING2">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TESTING3">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UNKNOWN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="AM_CREATES_EMPTY_ZIP_FILE_ENTRY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="AM_CREATES_EMPTY_JAR_FILE_ENTRY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IMSE_DONT_CATCH_IMSE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FL_MATH_USING_FLOAT_PRECISION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CAA_COVARIANT_ARRAY_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CAA_COVARIANT_ARRAY_LOCAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CAA_COVARIANT_ARRAY_RETURN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CAA_COVARIANT_ARRAY_ELEMENT_STORE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CN_IDIOM">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CN_IMPLEMENTS_CLONE_BUT_NOT_CLONEABLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CN_IDIOM_NO_SUPER_CALL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_FUTURE_KEYWORD_USED_AS_MEMBER_IDENTIFIER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DE_MIGHT_DROP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DE_MIGHT_IGNORE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DP_DO_INSIDE_DO_PRIVILEGED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DP_DO_INSIDE_DO_PRIVILEDGED"><!-- misspelled for backward compatibility -->
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="JCIP_FIELD_ISNT_FINAL_IN_IMMUTABLE_CLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_THREAD_PASSED_WHERE_RUNNABLE_EXPECTED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_COLLECTION_OF_URLS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+<a href="http://michaelscharf.blogspot.com/2006/11/javaneturlequals-and-hashcode-make.html"></a>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_BLOCKING_METHODS_ON_URL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+<a href="http://michaelscharf.blogspot.com/2006/11/javaneturlequals-and-hashcode-make.html"></a>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_ANNOTATION_IS_NOT_VISIBLE_TO_REFLECTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_EXIT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_RUN_FINALIZERS_ON_EXIT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_STRING_CTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_STRING_VOID_CTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_STRING_TOSTRING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_GC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_BOOLEAN_CTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_NUMBER_CTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_FP_NUMBER_CTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_CONVERT_CASE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BX_UNBOXED_AND_COERCED_FOR_TERNARY_OPERATOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BX_BOXING_IMMEDIATELY_UNBOXED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BX_UNBOXING_IMMEDIATELY_REBOXED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BX_BOXING_IMMEDIATELY_UNBOXED_TO_PERFORM_COERCION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_BOXED_PRIMITIVE_TOSTRING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_BOXED_PRIMITIVE_FOR_PARSING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_BOXED_PRIMITIVE_FOR_COMPARE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_NEW_FOR_GETCLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_MONITOR_WAIT_ON_CONDITION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_01_TO_INT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_INVALID_MIN_MAX">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_NEXTINT_VIA_NEXTDOUBLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_USELESS_THREAD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DC_DOUBLECHECK">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</a>
+
+</Details>
+</BugPattern>
+<BugPattern type="DC_PARTIALLY_CONSTRUCTED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FI_FINALIZER_NULLS_FIELDS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FI_FINALIZER_ONLY_NULLS_FIELDS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FI_PUBLIC_SHOULD_BE_PROTECTED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FI_EMPTY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FI_NULLIFY_SUPER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FI_USELESS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FI_MISSING_SUPER_CALL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FI_EXPLICIT_INVOCATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_DONT_DEFINE_EQUALS_FOR_ENUM">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_SELF_USE_OBJECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_OTHER_USE_OBJECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_OTHER_NO_OBJECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_DOESNT_OVERRIDE_EQUALS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_SELF_NO_OBJECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_GETCLASS_AND_CLASS_CONSTANT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_UNUSUAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_COMPARING_CLASS_NAMES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_ALWAYS_TRUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_ALWAYS_FALSE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HSC_HUGE_SHARED_STRING_CONSTANT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6447475"></a>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_ARGUMENT_MIGHT_BE_NULL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_NEGATING_RESULT_OF_COMPARETO">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CO_COMPARETO_RESULTS_MIN_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CO_COMPARETO_INCORRECT_FLOATING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CO_SELF_NO_OBJECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HE_USE_OF_UNHASHABLE_CLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HE_HASHCODE_USE_OBJECT_EQUALS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_COMPARETO_USE_OBJECT_EQUALS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HE_HASHCODE_NO_EQUALS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HE_EQUALS_USE_HASHCODE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HE_INHERITS_EQUALS_USE_HASHCODE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="HE_EQUALS_NO_HASHCODE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EQ_ABSTRACT_SELF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ES_COMPARING_STRINGS_WITH_EQ">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ES_COMPARING_PARAMETER_STRING_WITH_EQ">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CO_ABSTRACT_SELF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IS_FIELD_NOT_GUARDED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MSF_MUTABLE_SERVLET_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IS2_INCONSISTENT_SYNC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NN_NAKED_NOTIFY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_EXPOSE_REP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EI_EXPOSE_REP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EI_EXPOSE_REP2">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EI_EXPOSE_STATIC_REP2">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_EXPOSE_BUF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EI_EXPOSE_BUF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EI_EXPOSE_BUF2">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EI_EXPOSE_STATIC_BUF2">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RU_INVOKE_RUN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SP_SPIN_ON_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NS_DANGEROUS_NON_SHORT_CIRCUIT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-15.html#jls-15.22.2">
+</a>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NS_NON_SHORT_CIRCUIT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+<a href="https://docs.oracle.com/javase/specs/jls/se7/html/jls-15.html#jls-15.22.2">
+</a>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TLW_TWO_LOCK_WAIT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TLW_TWO_LOCK_NOTIFY" deprecated="true"><!-- never generated -->
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UW_UNCOND_WAIT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UR_UNINIT_READ">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UG_SYNC_SET_UNSYNC_GET">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IC_INIT_CIRCULARITY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IC_SUPERCLASS_USES_SUBCLASS_DURING_INITIALIZATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IT_NO_SUCH_ELEMENT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DL_SYNCHRONIZATION_ON_SHARED_CONSTANT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+<a href="http://www.javalobby.org/java/forums/t96352.html"></a><a href="http://jira.codehaus.org/browse/JETTY-352"></a>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="DL_SYNCHRONIZATION_ON_INTERNED_STRING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+<a href="http://www.javalobby.org/java/forums/t96352.html"></a><a href="http://jira.codehaus.org/browse/JETTY-352"></a>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="DL_SYNCHRONIZATION_ON_BOOLEAN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DL_SYNCHRONIZATION_ON_BOXED_PRIMITIVE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="ESync_EMPTY_SYNC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IS_INCONSISTENT_SYNC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ML_SYNC_ON_UPDATED_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_OOI_PKGPROTECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_FINAL_PKGPROTECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_SHOULD_BE_REFACTORED_TO_BE_FINAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_SHOULD_BE_FINAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_PKGPROTECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_MUTABLE_HASHTABLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_MUTABLE_COLLECTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_MUTABLE_COLLECTION_PKGPROTECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_MUTABLE_ARRAY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MS_CANNOT_BE_FINAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ME_MUTABLE_ENUM_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ME_ENUM_FIELD_SETTER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_SAME_SIMPLE_NAME_AS_SUPERCLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_SAME_SIMPLE_NAME_AS_INTERFACE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_CLASS_NAMING_CONVENTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_METHOD_NAMING_CONVENTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_FIELD_NAMING_CONVENTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_VERY_CONFUSING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_VERY_CONFUSING_INTENTIONAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_WRONG_PACKAGE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_WRONG_PACKAGE_INTENTIONAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_CONFUSING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_METHOD_CONSTRUCTOR_CONFUSION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_LCASE_HASHCODE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_LCASE_TOSTRING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_BAD_EQUAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NM_CLASS_NOT_EXCEPTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RR_NOT_CHECKED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SR_NOT_CHECKED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_READ_RESOLVE_IS_STATIC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_PRIVATE_READ_RESOLVE_NOT_INHERITED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_READ_RESOLVE_MUST_RETURN_OBJECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_TRANSIENT_FIELD_OF_NONSERIALIZABLE_CLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_TRANSIENT_FIELD_NOT_RESTORED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_PREVENT_EXT_OBJ_OVERWRITE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_METHOD_MUST_BE_PRIVATE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_NO_SUITABLE_CONSTRUCTOR_FOR_EXTERNALIZATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_NO_SUITABLE_CONSTRUCTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_NO_SERIALVERSIONID">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SF_SWITCH_FALLTHROUGH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SF_SWITCH_NO_DEFAULT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH_TO_THROW">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="WS_WRITEOBJECT_SYNC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RS_READOBJECT_SYNC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_NONSTATIC_SERIALVERSIONID">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_NONFINAL_SERIALVERSIONID">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_NONLONG_SERIALVERSIONID">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_BAD_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_BAD_FIELD_INNER_CLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_INNER_CLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SE_BAD_FIELD_STORE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SC_START_IN_CTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SS_SHOULD_BE_STATIC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UUF_UNUSED_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="URF_UNREAD_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="QF_QUESTIONABLE_FOR_LOOP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UWF_NULL_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UWF_UNWRITTEN_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_LOAD_OF_KNOWN_NULL_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_DEREFERENCE_OF_READLINE_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_IMMEDIATE_DEREFERENCE_OF_READLINE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_UNWRITTEN_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SIC_THREADLOCAL_DEADLY_EMBRACE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SIC_INNER_SHOULD_BE_STATIC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SIC_INNER_SHOULD_BE_STATIC_ANON">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SIC_INNER_SHOULD_BE_STATIC_NEEDS_THIS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="WA_NOT_IN_LOOP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="WA_AWAIT_NOT_IN_LOOP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NO_NOTIFY_NOT_NOTIFYALL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UC_USELESS_VOID_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UC_USELESS_CONDITION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UC_USELESS_CONDITION_TYPE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UC_USELESS_OBJECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UC_USELESS_OBJECT_STACK">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RANGE_ARRAY_INDEX">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RANGE_ARRAY_OFFSET">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RANGE_ARRAY_LENGTH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RANGE_STRING_INDEX">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_CHECK_FOR_POSITIVE_INDEXOF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_DONT_JUST_NULL_CHECK_READLINE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="RV_RETURN_VALUE_IGNORED_INFERRED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="RV_RETURN_VALUE_IGNORED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+
+<BugPattern type="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_CHECK_COMPARETO_FOR_SPECIFIC_RETURN_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_EXCEPTION_NOT_THROWN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_ALWAYS_NULL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_CLOSING_NULL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_STORE_INTO_NONNULL_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_ALWAYS_NULL_EXCEPTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NULL_ON_SOME_PATH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NULL_ON_SOME_PATH_MIGHT_BE_INFEASIBLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NULL_ON_SOME_PATH_EXCEPTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NULL_PARAM_DEREF_NONVIRTUAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NULL_PARAM_DEREF_ALL_TARGETS_DANGEROUS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NULL_PARAM_DEREF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NONNULL_PARAM_VIOLATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NONNULL_RETURN_VIOLATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_CLONE_COULD_RETURN_NULL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_TOSTRING_COULD_RETURN_NULL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_GUARANTEED_DEREF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SI_INSTANCE_BEFORE_FINALS_ASSIGNED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="OS_OPEN_STREAM">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="OS_OPEN_STREAM_EXCEPTION_PATH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="PZLA_PREFER_ZERO_LENGTH_ARRAYS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UCF_USELESS_CONTROL_FLOW">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UCF_USELESS_CONTROL_FLOW_NEXT_LINE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RCN_REDUNDANT_COMPARISON_TWO_NULL_VALUES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RCN_REDUNDANT_COMPARISON_OF_NULL_AND_NONNULL_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RCN_REDUNDANT_CHECKED_NULL_COMPARISON" deprecated="true"><!-- deprecated in favor of two separate RCN_ patterns -->
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UL_UNRELEASED_LOCK">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UL_UNRELEASED_LOCK_EXCEPTION_PATH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RC_REF_COMPARISON">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RC_REF_COMPARISON_BAD_PRACTICE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EC_UNRELATED_TYPES_USING_POINTER_EQUALITY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EC_UNRELATED_TYPES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EC_UNRELATED_INTERFACES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EC_UNRELATED_CLASS_AND_INTERFACE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EC_NULL_ARG">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MWN_MISMATCHED_WAIT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MWN_MISMATCHED_NOTIFY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SA_LOCAL_SELF_ASSIGNMENT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SA_FIELD_SELF_ASSIGNMENT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SA_FIELD_DOUBLE_ASSIGNMENT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SA_LOCAL_DOUBLE_ASSIGNMENT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SA_FIELD_SELF_COMPUTATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SA_LOCAL_SELF_COMPUTATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SA_FIELD_SELF_COMPARISON">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SA_LOCAL_SELF_COMPARISON">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_LONG_BITS_TO_DOUBLE_INVOKED_ON_INT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_ARGUMENTS_WRONG_ORDER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_RANDOM_USED_ONLY_ONCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_ABSOLUTE_VALUE_OF_RANDOM_INT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_ABSOLUTE_VALUE_OF_HASHCODE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_REM_OF_RANDOM_INT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_REM_OF_HASHCODE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="INT_BAD_COMPARISON_WITH_SIGNED_BYTE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="INT_BAD_COMPARISON_WITH_INT_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+
+<BugPattern type="INT_VACUOUS_BIT_OPERATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="INT_VACUOUS_COMPARISON">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="INT_BAD_REM_BY_1">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BIT_IOR_OF_SIGNED_BYTE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BIT_ADD_OF_SIGNED_BYTE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BIT_AND">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BIT_SIGNED_CHECK">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BIT_SIGNED_CHECK_HIGH_BIT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BIT_AND_ZZ">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BIT_IOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="LI_LAZY_INIT_INSTANCE" deprecated="true"><!-- never generated? -->
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+<a href="http://www.cs.umd.edu/~pugh/java/memoryModel/"></a>
+
+
+</Details>
+</BugPattern>
+<BugPattern type="LI_LAZY_INIT_STATIC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+<a href="http://www.cs.umd.edu/~pugh/java/memoryModel/"></a>
+
+
+</Details>
+</BugPattern>
+<BugPattern type="LI_LAZY_INIT_UPDATE_STATIC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="JLM_JSR166_LOCK_MONITORENTER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="JML_JSR166_CALLING_WAIT_RATHER_THAN_AWAIT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="JLM_JSR166_UTILCONCURRENT_MONITORENTER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UPM_UNCALLED_PRIVATE_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UMAC_UNCALLABLE_METHOD_OF_ANONYMOUS_CLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ODR_OPEN_DATABASE_RESOURCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SBSC_USE_STRINGBUFFER_CONCATENATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IIL_PREPARE_STATEMENT_IN_LOOP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IIL_ELEMENTS_GET_LENGTH_IN_LOOP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IIL_PATTERN_COMPILE_IN_LOOP">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IIL_PATTERN_COMPILE_IN_LOOP_INDIRECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IIO_INEFFICIENT_INDEX_OF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IIO_INEFFICIENT_LAST_INDEX_OF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ITA_INEFFICIENT_TO_ARRAY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IJU_ASSERT_METHOD_INVOKED_FROM_RUN_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IJU_SETUP_NO_SUPER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IJU_TEARDOWN_NO_SUPER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IJU_SUITE_NOT_STATIC">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IJU_BAD_SUITE_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IJU_NO_TESTS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BOA_BADLY_OVERRIDDEN_ADAPTER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BRSA_BAD_RESULTSET_ACCESS" deprecated="true"><!-- deprecated in favor of SQL_BAD_RESULTSET_ACCESS -->
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SQL_BAD_RESULTSET_ACCESS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SQL_BAD_PREPARED_STATEMENT_ACCESS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SIO_SUPERFLUOUS_INSTANCEOF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BAC_BAD_APPLET_CONSTRUCTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EC_ARRAY_AND_NONARRAY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EC_BAD_ARRAY_COMPARE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="EC_INCOMPATIBLE_ARRAY_COMPARE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="STI_INTERRUPTED_ON_CURRENTTHREAD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="STI_INTERRUPTED_ON_UNKNOWNTHREAD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DLS_DEAD_LOCAL_STORE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="DLS_DEAD_LOCAL_STORE_IN_RETURN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DLS_DEAD_LOCAL_INCREMENT_IN_RETURN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+
+
+<BugPattern type="DLS_DEAD_STORE_OF_CLASS_LITERAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+<a href="http://www.oracle.com/technetwork/java/javase/compatibility-137462.html#literal"></a>
+
+
+
+
+<a href="http://www.oracle.com/technetwork/java/javase/compatibility-137462.html#literal"></a>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DLS_DEAD_LOCAL_STORE_OF_NULL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MF_METHOD_MASKS_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MF_CLASS_MASKS_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="WMI_WRONG_MAP_ITERATOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ISC_INSTANTIATE_STATIC_CLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="REC_CATCH_EXCEPTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DCN_NULLPOINTER_EXCEPTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FE_FLOATING_POINT_EQUALITY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="UM_UNNECESSARY_MATH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CD_CIRCULAR_DEPENDENCY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RI_REDUNDANT_INTERFACES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MTIA_SUSPECT_STRUTS_INSTANCE_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="MTIA_SUSPECT_SERVLET_INSTANCE_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="PS_PUBLIC_SEMAPHORES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ICAST_INTEGER_MULTIPLY_CAST_TO_LONG">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ICAST_INT_2_LONG_AS_INSTANT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ICAST_INT_CAST_TO_FLOAT_PASSED_TO_ROUND">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ICAST_INT_CAST_TO_DOUBLE_PASSED_TO_CEIL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ICAST_IDIV_CAST_TO_DOUBLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_NONSERIALIZABLE_OBJECT_WRITTEN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="VA_FORMAT_STRING_USES_NEWLINE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="VA_PRIMITIVE_ARRAY_PASSED_TO_OBJECT_VARARG">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_BAD_CAST_TO_ABSTRACT_COLLECTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_IMPOSSIBLE_CAST_PRIMITIVE_ARRAY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_IMPOSSIBLE_CAST">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_IMPOSSIBLE_DOWNCAST">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://shipilev.net/blog/2016/arrays-wisdom-ancients/#_historical_perspective"></a>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_NULL_INSTANCEOF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_NULL_INSTANCEOF" deprecated="true"><!-- deprecated in favor of NP_NULL_INSTANCEOF -->
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_IMPOSSIBLE_INSTANCEOF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_VACUOUS_INSTANCEOF">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_UNCONFIRMED_CAST">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_UNCONFIRMED_CAST_OF_RETURN_VALUE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BC_BAD_CAST_TO_CONCRETE_COLLECTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RE_POSSIBLE_UNINTENDED_PATTERN">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RE_BAD_SYNTAX_FOR_REGULAR_EXPRESSION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RE_CANT_USE_FILE_SEPARATOR_AS_REGULAR_EXPRESSION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DLS_OVERWRITTEN_INCREMENT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ICAST_QUESTIONABLE_UNSIGNED_RIGHT_SHIFT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="BSHIFT_WRONG_ADD_PRIORITY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="ICAST_BAD_SHIFT_AMOUNT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IM_MULTIPLYING_RESULT_OF_IREM">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_INVOKING_HASHCODE_ON_ARRAY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_INVOKING_TOSTRING_ON_ARRAY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_INVOKING_TOSTRING_ON_ANONYMOUS_ARRAY">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IM_AVERAGE_COMPUTATION_COULD_OVERFLOW">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6412541"></a>
+
+<a href="http://googleresearch.blogspot.com/2006/06/extra-extra-read-all-about-it-nearly.html">
+</a>
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IM_BAD_CHECK_FOR_ODD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_HARDCODED_ABSOLUTE_FILENAME">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_BAD_MONTH">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_USELESS_SUBSTRING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_CALLING_NEXT_FROM_HASNEXT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="SWL_SLEEP_WITH_LOCK_HELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DB_DUPLICATE_BRANCHES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DB_DUPLICATE_SWITCH_CLAUSES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IMA_INEFFICIENT_MEMBER_ACCESS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="XFB_XML_FACTORY_BYPASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="USM_USELESS_SUBCLASS_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="USM_USELESS_ABSTRACT_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="CI_CONFUSED_INHERITANCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="VR_UNRESOLVABLE_REFERENCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="GC_UNCHECKED_TYPE_IN_GENERIC_CALL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="GC_UNRELATED_TYPES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_COLLECTIONS_SHOULD_NOT_CONTAIN_THEMSELVES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_VACUOUS_SELF_COLLECTION_CALL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="PZ_DONT_REUSE_ENTRY_OBJECTS_IN_ITERATORS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DMI_ENTRY_SETS_MAY_REUSE_ENTRY_OBJECTS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="DMI_USING_REMOVEALL_TO_CLEAR_COLLECTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="STCAL_STATIC_CALENDAR_INSTANCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6231579"></a>
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6178997"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6231579"></a>
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6178997"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6231579"></a>
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6178997"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6231579"></a>
+<a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=6178997"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="TQ_COMPARING_VALUES_WITH_INCOMPATIBLE_TYPE_QUALIFIERS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+
+<BugPattern type="TQ_ALWAYS_VALUE_USED_WHERE_NEVER_REQUIRED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+
+<BugPattern type="TQ_UNKNOWN_VALUE_USED_WHERE_ALWAYS_STRICTLY_REQUIRED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TQ_NEVER_VALUE_USED_WHERE_ALWAYS_REQUIRED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+
+
+
+<BugPattern type="TQ_MAYBE_SOURCE_VALUE_REACHES_ALWAYS_SINK">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TQ_MAYBE_SOURCE_VALUE_REACHES_NEVER_SINK">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_NEVER_SINK">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_ALWAYS_SINK">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="IO_APPENDING_TO_OBJECT_OUTPUT_STREAM">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="WL_USING_GETCLASS_RATHER_THAN_CLASS_LITERAL">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="OBL_UNSATISFIED_OBLIGATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/spotbugs/spotbugs/blob/master/.github/CONTRIBUTING.md"></a>
+<a href="https://github.com/spotbugs/discuss/issues?q="></a>
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://people.eecs.berkeley.edu/~necula/Papers/rte_oopsla04.pdf"></a>
+
+
+
+</Details>
+</BugPattern>
+
+
+
+
+<BugPattern type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/spotbugs/spotbugs/blob/master/.github/CONTRIBUTING.md"></a>
+<a href="https://github.com/spotbugs/discuss/issues?q="></a>
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://people.eecs.berkeley.edu/~necula/Papers/rte_oopsla04.pdf"></a>
+
+
+
+</Details>
+</BugPattern>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<BugPattern type="FB_UNEXPECTED_WARNING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="FB_MISSING_EXPECTED_WARNING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="LG_LOST_LOGGER_DUE_TO_WEAK_REFERENCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="AT_OPERATION_SEQUENCE_ON_CONCURRENT_ABSTRACTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="DM_DEFAULT_ENCODING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_METHOD_PARAMETER_RELAXING_ANNOTATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="NP_METHOD_PARAMETER_TIGHTENS_ANNOTATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="NP_METHOD_RETURN_RELAXING_ANNOTATION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="EOS_BAD_END_OF_STREAM_CHECK">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/FIO08-J.+Distinguish+between+characters+or+bytes+read+from+a+stream+and+-1"></a>
+
+</Details>
+</BugPattern>
+
+<BugPattern type="REFLC_REFLECTION_MAY_INCREASE_ACCESSIBILITY_OF_CLASS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/SEC05-J.+Do+not+use+reflection+to+increase+accessibility+of+classes%2C+methods%2C+or+fields"></a>
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="REFLF_REFLECTION_MAY_INCREASE_ACCESSIBILITY_OF_FIELD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/SEC05-J.+Do+not+use+reflection+to+increase+accessibility+of+classes%2C+methods%2C+or+fields"></a>
+
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/MET05-J.+Ensure+that+constructors+do+not+call+overridable+methods"></a>
+
+</Details>
+</BugPattern>
+
+<BugPattern type="MC_OVERRIDABLE_METHOD_CALL_IN_CLONE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=88487921"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="MC_OVERRIDABLE_METHOD_CALL_IN_READ_OBJECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+<br/>
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/SER09-J.+Do+not+invoke+overridable+methods+from+the+readObject%28%29+method">
+</a>
+
+</Details>
+</BugPattern>
+<BugPattern type="SING_SINGLETON_IMPLEMENTS_CLONEABLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<br>
+<br><br>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="SING_SINGLETON_INDIRECTLY_IMPLEMENTS_CLONEABLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<br>
+<br><br>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="SING_SINGLETON_IMPLEMENTS_CLONE_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+<br>
+<br><br>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="SING_SINGLETON_HAS_NONPRIVATE_CONSTRUCTOR">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<br>
+<br><br>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="SING_SINGLETON_IMPLEMENTS_SERIALIZABLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<br>
+<br><br>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="SING_SINGLETON_GETTER_NOT_SYNCHRONIZED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+<br><br>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="SSD_DO_NOT_USE_INSTANCE_LOCK_ON_SHARED_STATIC_DATA">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK06-J.+Do+not+use+an+instance+lock+to+protect+shared+static+data">
+</a>
+
+</Details>
+</BugPattern>
+<BugPattern type="FL_FLOATS_AS_LOOP_COUNTERS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/NUM09-J.+Do+not+use+floating-point+variables+as+loop+counters"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="THROWS_METHOD_THROWS_RUNTIMEEXCEPTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<br>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable"></a>
+<br>
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR08-J.+Do+not+catch+NullPointerException+or+any+of+its+ancestors"></a><br>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<br>
+
+
+
+
+<br><br>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="THROWS_METHOD_THROWS_CLAUSE_THROWABLE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<br>
+
+
+
+<br>
+
+<br><br>
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="PERM_SUPER_NOT_CALLED_IN_GETPERMISSIONS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/SEC07-J.+Call+the+superclass%27s+getPermissions%28%29+method+when+writing+a+custom+class+loader"></a>
+
+
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="USC_POTENTIAL_SECURITY_CHECK_BASED_ON_UNTRUSTED_SOURCE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/SEC02-J.+Do+not+base+security+checks+on+untrusted+sources"></a>
+
+</Details>
+</BugPattern>
+
+<BugPattern type="ASE_ASSERTION_WITH_SIDE_EFFECT">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+<https://wiki.sei.cmu.edu/confluence/display/java/EXP06-J.+Expressions+used+in+assertions+must+not+produce+side+effects></a>
+
+
+
+</Details>
+</BugPattern>
+
+<BugPattern type="ASE_ASSERTION_WITH_SIDE_EFFECT_METHOD">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+<https://wiki.sei.cmu.edu/confluence/display/java/EXP06-J.+Expressions+used+in+assertions+must+not+produce+side+effects></a>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="PA_PUBLIC_PRIMITIVE_ATTRIBUTE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/OBJ01-J.+Limit+accessibility+of+fields"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="PA_PUBLIC_ARRAY_ATTRIBUTE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/OBJ01-J.+Limit+accessibility+of+fields"></a>
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="PA_PUBLIC_MUTABLE_OBJECT_ATTRIBUTE">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/OBJ01-J.+Limit+accessibility+of+fields"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="VSC_VULNERABLE_SECURITY_CHECK_METHODS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/MET03-J.+Methods+that+perform+a+security+check+must+be+declared+private+or+final"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="AA_ASSERTION_OF_ARGUMENTS">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/MET01-J.+Never+use+assertions+to+validate+method+arguments"></a>
+
+
+
+</Details>
+</BugPattern>
+<BugPattern type="PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_CLASS_NAMES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/DCL01-J.+Do+not+reuse+public+identifiers+from+the+Java+Standard+Library"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_FIELD_NAMES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/DCL01-J.+Do+not+reuse+public+identifiers+from+the+Java+Standard+Library"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_METHOD_NAMES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/DCL01-J.+Do+not+reuse+public+identifiers+from+the+Java+Standard+Library"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_LOCAL_VARIABLE_NAMES">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/DCL01-J.+Do+not+reuse+public+identifiers+from+the+Java+Standard+Library"></a>
+
+</Details>
+</BugPattern>
+<BugPattern type="ENV_USE_PROPERTY_INSTEAD_OF_ENV">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+<![CDATA[<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/ENV02-J.+Do+not+trust+the+values+of+environment+variables"></a>
+
+</Details>
+</BugPattern>
+
+
+
+
+
+<BugCode abbrev="FS"></BugCode>
+<BugCode abbrev="SKIPPED"></BugCode>
+<BugCode abbrev="IL"></BugCode>
+<BugCode abbrev="VO"></BugCode>
+<BugCode abbrev="UI"></BugCode>
+<BugCode abbrev="FL"></BugCode>
+<BugCode abbrev="TEST"></BugCode>
+<BugCode abbrev="IMSE"></BugCode>
+<BugCode abbrev="CN"></BugCode>
+<BugCode abbrev="CAA"></BugCode>
+<BugCode abbrev="AT"></BugCode>
+<BugCode abbrev="FI"></BugCode>
+<BugCode abbrev="ES"></BugCode>
+<BugCode abbrev="ML"></BugCode>
+<BugCode abbrev="UG"></BugCode>
+<BugCode abbrev="IO"></BugCode>
+<BugCode abbrev="IC"></BugCode>
+<BugCode abbrev="SI"></BugCode>
+<BugCode abbrev="MSF"></BugCode>
+<BugCode abbrev="IS"></BugCode>
+<BugCode abbrev="Eq"></BugCode>
+<BugCode abbrev="Co"></BugCode>
+<BugCode abbrev="HE"></BugCode>
+<BugCode abbrev="AM"></BugCode>
+<BugCode abbrev="Dm"></BugCode>
+<BugCode abbrev="Bx"></BugCode>
+<BugCode abbrev="UR"></BugCode>
+<BugCode abbrev="RR"></BugCode>
+<BugCode abbrev="NN"></BugCode>
+<BugCode abbrev="UW"></BugCode>
+<BugCode abbrev="SP"></BugCode>
+<BugCode abbrev="DC"></BugCode>
+<BugCode abbrev="Wa"></BugCode>
+<BugCode abbrev="No"></BugCode>
+<BugCode abbrev="DE"></BugCode>
+<BugCode abbrev="Ru"></BugCode>
+<BugCode abbrev="It"></BugCode>
+<BugCode abbrev="SnVI"></BugCode>
+<BugCode abbrev="Se"></BugCode>
+<BugCode abbrev="WS"></BugCode>
+<BugCode abbrev="RS"></BugCode>
+<BugCode abbrev="SC"></BugCode>
+<BugCode abbrev="MS"></BugCode>
+<BugCode abbrev="ME"></BugCode>
+<BugCode abbrev="EI"></BugCode>
+<BugCode abbrev="Nm"></BugCode>
+<BugCode abbrev="SS"></BugCode>
+<BugCode abbrev="UuF"></BugCode>
+<BugCode abbrev="UrF"></BugCode>
+<BugCode abbrev="UwF"></BugCode>
+<BugCode abbrev="SIC"></BugCode>
+<BugCode abbrev="TLW"></BugCode>
+<BugCode abbrev="RANGE"></BugCode>
+<BugCode abbrev="RV"></BugCode>
+<BugCode abbrev="LG"></BugCode>
+<BugCode abbrev="IA"></BugCode>
+<BugCode abbrev="HSC"></BugCode>
+<BugCode abbrev="HRS"></BugCode>
+<BugCode abbrev="PT"></BugCode>
+<BugCode abbrev="XSS"></BugCode>
+<BugCode abbrev="NP"></BugCode>
+<BugCode abbrev="NOISE"></BugCode>
+<BugCode abbrev="RpC"></BugCode>
+<BugCode abbrev="OS"></BugCode>
+<BugCode abbrev="PZLA"></BugCode>
+<BugCode abbrev="UCF"></BugCode>
+<BugCode abbrev="RCN"></BugCode>
+<BugCode abbrev="UL"></BugCode>
+<BugCode abbrev="RC"></BugCode>
+<BugCode abbrev="EC"></BugCode>
+<BugCode abbrev="MWN"></BugCode>
+<BugCode abbrev="SA"></BugCode>
+<BugCode abbrev="INT"></BugCode>
+<BugCode abbrev="BIT"></BugCode>
+<BugCode abbrev="LI"></BugCode>
+<BugCode abbrev="JLM"></BugCode>
+<BugCode abbrev="UPM"></BugCode>
+<BugCode abbrev="UMAC"></BugCode>
+<BugCode abbrev="EI2"></BugCode>
+<BugCode abbrev="NS"></BugCode>
+<BugCode abbrev="ODR"></BugCode>
+<BugCode abbrev="SBSC"></BugCode>
+<BugCode abbrev="IIL"></BugCode>
+<BugCode abbrev="IIO"></BugCode>
+<BugCode abbrev="ITA"></BugCode>
+<BugCode abbrev="SW"></BugCode>
+<BugCode abbrev="IJU"></BugCode>
+<BugCode abbrev="BOA"></BugCode>
+<BugCode abbrev="SF"></BugCode>
+<BugCode abbrev="SIO"></BugCode>
+<BugCode abbrev="BAC"></BugCode>
+<BugCode abbrev="UOE"></BugCode>
+<BugCode abbrev="STI"></BugCode>
+<BugCode abbrev="DLS"></BugCode>
+<BugCode abbrev="IP"></BugCode>
+<BugCode abbrev="MF"></BugCode>
+<BugCode abbrev="WMI"></BugCode>
+<BugCode abbrev="ISC"></BugCode>
+<BugCode abbrev="DCN"></BugCode>
+<BugCode abbrev="REC"></BugCode>
+<BugCode abbrev="FE"></BugCode>
+<BugCode abbrev="UM"></BugCode>
+<BugCode abbrev="UC"></BugCode>
+<BugCode abbrev="CNT"></BugCode>
+<BugCode abbrev="CD"></BugCode>
+<BugCode abbrev="RI"></BugCode>
+<BugCode abbrev="MTIA"></BugCode>
+<BugCode abbrev="PS"></BugCode>
+<BugCode abbrev="BSHIFT"></BugCode>
+<BugCode abbrev="ICAST"></BugCode>
+<BugCode abbrev="RE"></BugCode>
+<BugCode abbrev="SQL"></BugCode>
+<BugCode abbrev="WL"></BugCode>
+<BugCode abbrev="ESync"></BugCode>
+<BugCode abbrev="QF"></BugCode>
+<BugCode abbrev="VA"></BugCode>
+<BugCode abbrev="BC"></BugCode>
+<BugCode abbrev="IM"></BugCode>
+<BugCode abbrev="ST"></BugCode>
+<BugCode abbrev="JCIP"></BugCode>
+<BugCode abbrev="USELESS_STRING"></BugCode>
+<BugCode abbrev="DMI"></BugCode>
+<BugCode abbrev="PZ"></BugCode>
+<BugCode abbrev="SWL"></BugCode>
+<BugCode abbrev="J2EE"></BugCode>
+<BugCode abbrev="DB"></BugCode>
+<BugCode abbrev="IMA"></BugCode>
+<BugCode abbrev="XFB"></BugCode>
+<BugCode abbrev="USM"></BugCode>
+<BugCode abbrev="CI"></BugCode>
+<BugCode abbrev="QBA"></BugCode>
+<BugCode abbrev="VR"></BugCode>
+<BugCode abbrev="DP"></BugCode>
+<BugCode abbrev="GC"></BugCode>
+<BugCode abbrev="STCAL"></BugCode>
+<BugCode abbrev="TQ"></BugCode>
+<BugCode abbrev="OBL"></BugCode>
+<BugCode abbrev="FB"></BugCode>
+<BugCode abbrev="DL"></BugCode>
+<BugCode abbrev="JUA"></BugCode>
+<BugCode abbrev="EOS"></BugCode>
+<BugCode abbrev="REFLC"></BugCode>
+<BugCode abbrev="REFLF"></BugCode>
+<BugCode abbrev="MC"></BugCode>
+<BugCode abbrev="CT"></BugCode>
+<BugCode abbrev="SSD"></BugCode>
+<BugCode abbrev="SING"></BugCode>
+<BugCode abbrev="THROWS"></BugCode>
+<BugCode abbrev="PERM"></BugCode>
+<BugCode abbrev="USC"></BugCode>
+<BugCode abbrev="ASE"></BugCode>
+<BugCode abbrev="PA"></BugCode>
+<BugCode abbrev="VSC"></BugCode>
+<BugCode abbrev="AA"></BugCode>
+<BugCode abbrev="PI"></BugCode>
+<BugCode abbrev="ENV"></BugCode>
+</MessageCollection>
