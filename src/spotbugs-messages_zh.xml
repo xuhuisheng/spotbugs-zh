@@ -3886,22 +3886,6 @@ d    </Details>
 
     </Details>
   </BugPattern>
-  <BugPattern type="TLW_TWO_LOCK_NOTIFY" deprecated="true"> <!-- never generated -->
-    <ShortDescription>持有两个锁时通知  Notify with two locks held</ShortDescription>
-    <LongDescription>notify（）或notifyAll*（），在{1}中持有两个锁</LongDescription>
-    <Details>
-<![CDATA[
-<p>代码在持有两个锁的情况下调用notify（）或notifyAll（）。如果此通知旨在唤醒持有相同锁的wait（），它可能会死锁，因为wait只会放弃一个锁，而notify将无法获得两个锁，因此notify不会成功&nbsp；如果还存在关于两个锁等待的警告，则错误的可能性很高</p>]]>
-
-
-
-
-
-
-
-
-    </Details>
-  </BugPattern>
   <BugPattern type="UW_UNCOND_WAIT">
     <ShortDescription>无条件等待  Unconditional wait</ShortDescription>
     <LongDescription>{1}中的无条件等待</LongDescription>
@@ -5854,26 +5838,6 @@ synchronized(LOCK) {
 
     </Details>
   </BugPattern>
-  <BugPattern type="RCN_REDUNDANT_CHECKED_NULL_COMPARISON" deprecated="true"> <!-- deprecated in favor of two separate RCN_ patterns -->
-    <ShortDescription>与先前检查值的null进行冗余比较  Redundant comparison to null of previously checked value</ShortDescription>
-    <LongDescription>{1}中先前检查的{2}的null的冗余比较</LongDescription>
-    <Details>
-<![CDATA[
-<p>此方法包含引用值与null的冗余比较。报告了两种类型的冗余比较：</p><ul><li>两个比较的值都绝对为空</li><li>一个值绝对为空，另一个绝对不为空。虽然检查是不必要的，但它可能只是一种防御性编程</p>]]>
-
-
-
-
-
-
-
-
-
-
-
-
-    </Details>
-  </BugPattern>
   <BugPattern type="UL_UNRELEASED_LOCK">
     <ShortDescription>方法不会释放所有路径上的锁  Method does not release lock on all paths</ShortDescription>
     <LongDescription>{1} 不会释放所有路径上的锁</LongDescription>
@@ -6506,22 +6470,6 @@ synchronized(LOCK) {
 
     </Details>
   </BugPattern>
-  <BugPattern type="LI_LAZY_INIT_INSTANCE" deprecated="true"> <!-- never generated? -->
-    <ShortDescription>实例字段的惰性初始化不正确  Incorrect lazy initialization of instance field</ShortDescription>
-    <LongDescription>{1}中实例字段{2}的延迟初始化不正确</LongDescription>
-    <Details>
-<![CDATA[
-<p>此方法包含非易失性字段的非同步惰性初始化。因为编译器或处理器可能会对指令重新排序，所以如果多个线程可以调用该方法，线程就不能保证看到完全初始化的对象。您可以使字段不稳定以纠正问题。有关详细信息，
-
-
-
-
-
-  请参阅<a href="http://www.cs.umd.edu/~pugh/java/memoryModel/">java内存模型网站</a>
-</p>
-  ]]>
-    </Details>
-  </BugPattern>
   <BugPattern type="LI_LAZY_INIT_STATIC">
     <ShortDescription>静态字段的惰性初始化不正确  Incorrect lazy initialization of static field</ShortDescription>
     <LongDescription>{1}中静态字段{2}的惰性初始化不正确</LongDescription>
@@ -6854,16 +6802,6 @@ synchronized(LOCK) {
 <![CDATA[
 <p>此方法覆盖父类中的方法，其中该类是实现java.awt中定义的侦听器的适配器。事件或javax.swing。事件包。因此，当事件发生时，将不会调用此方法</p>]]>
 
-
-
-    </Details>
-  </BugPattern>
-  <BugPattern type="BRSA_BAD_RESULTSET_ACCESS" deprecated="true"> <!-- deprecated in favor of SQL_BAD_RESULTSET_ACCESS -->
-    <ShortDescription>方法尝试访问索引为0的结果集字段  Method attempts to access a result set field with index 0</ShortDescription>
-    <LongDescription>{1} 尝试访问索引为0的结果集字段</LongDescription>
-    <Details>
-<![CDATA[
-<p>在字段索引为0的情况下，调用了结果集的getXXX或updateXXX方法。由于结果集字段从索引1开始，因此这总是一个错误</p>]]>
 
 
     </Details>
@@ -7693,19 +7631,6 @@ boolean hasSpace(String m) {
     </Details>
   </BugPattern>
   <BugPattern type="NP_NULL_INSTANCEOF">
-    <ShortDescription>检查已知的null值以查看它是否是类型的实例  A known null value is checked to see if it is an instance of a type</ShortDescription>
-    <LongDescription>检查一个已知的空值，看它是否是{1}中{2}的实例</LongDescription>
-    <Details>
-<![CDATA[
-<p>此测试实例将始终返回false，因为被检查的值保证为null。尽管这是安全的，但请确保这不是误解或其他逻辑错误的迹象</p>]]>
-
-
-
-
-
-    </Details>
-  </BugPattern>
-  <BugPattern type="BC_NULL_INSTANCEOF" deprecated="true"> <!-- deprecated in favor of NP_NULL_INSTANCEOF -->
     <ShortDescription>检查已知的null值以查看它是否是类型的实例  A known null value is checked to see if it is an instance of a type</ShortDescription>
     <LongDescription>检查一个已知的空值，看它是否是{1}中{2}的实例</LongDescription>
     <Details>
@@ -9442,6 +9367,69 @@ Martin Buchholz <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=641
      ]]>
     </Details>
   </BugPattern>
+
+  <BugPattern type="US_USELESS_SUPPRESSION_ON_CLASS">
+    <ShortDescription>对类使用了无用的压制 Suppression</ShortDescription>
+    <LongDescription>不用为类 {0} 使用压制注解</LongDescription>
+    <Details>
+      <![CDATA[<p>
+      压制注解 <code>&amp;SuppressFBWarnings</code> 应该在不用后，从源码中删除。
+      遗留这种注解可能会导致异常的告警。
+      </p>]]>
+    </Details>
+  </BugPattern>
+
+  <BugPattern type="US_USELESS_SUPPRESSION_ON_FIELD">
+    <ShortDescription>对成员变量使用了无用的压制</ShortDescription>
+    <LongDescription>不用为成员变量 {1} 使用压制注解</LongDescription>
+    <Details>
+      <![CDATA[<p>
+      压制注解 <code>&amp;SuppressFBWarnings</code> 应该在不用后，从源码中删除。
+      遗留这种注解可能会导致异常的告警。
+      这个注解可能用来压制一个 SpotBugs 产生的告警，但是现在 SpotBugs 不再报告这个 bug 了。
+      可能 bug 已被修复，可能 SpotBugs 进行了更新，总之，这段代码不会再报告这个 bug。
+      </p>]]>
+    </Details>
+  </BugPattern>
+
+  <BugPattern type="US_USELESS_SUPPRESSION_ON_METHOD">
+    <ShortDescription>对方法使用了无用的压制</ShortDescription>
+    <LongDescription>不用为方法 {1} 使用压制注解</LongDescription>
+    <Details>
+      <![CDATA[<p>
+      压制注解 <code>&amp;SuppressFBWarnings</code> 应该在不用后，从源码中删除。
+      遗留这种注解可能会导致异常的告警。
+      这个注解可能用来压制一个 SpotBugs 产生的告警，但是现在 SpotBugs 不再报告这个 bug 了。
+      可能 bug 已被修复，可能 SpotBugs 进行了更新，总之，这段代码不会再报告这个 bug。
+      </p>]]>
+    </Details>
+  </BugPattern>
+
+  <BugPattern type="US_USELESS_SUPPRESSION_ON_METHOD_PARAMETER">
+    <ShortDescription>对方法参数使用了无用的压制</ShortDescription>
+    <LongDescription>不用为方法 {1} 的参数 {2} 使用压制注解</LongDescription>
+    <Details>
+      <![CDATA[<p>
+      压制注解 <code>&amp;SuppressFBWarnings</code> 应该在不用后，从源码中删除。
+      遗留这种注解可能会导致异常的告警。
+      这个注解可能用来压制一个 SpotBugs 产生的告警，但是现在 SpotBugs 不再报告这个 bug 了。
+      可能 bug 已被修复，可能 SpotBugs 进行了更新，总之，这段代码不会再报告这个 bug。
+      </p>]]>
+    </Details>
+  </BugPattern>
+
+  <BugPattern type="US_USELESS_SUPPRESSION_ON_PACKAGE">
+    <ShortDescription>对包使用了无用的压制</ShortDescription>
+    <LongDescription>不用为包 {0} 使用压制注解</LongDescription>
+    <Details>
+      <![CDATA[<p>
+      压制注解 <code>&amp;SuppressFBWarnings</code> 应该在不用后，从源码中删除。
+      遗留这种注解可能会导致异常的告警。
+      这个注解可能用来压制一个 SpotBugs 产生的告警，但是现在 SpotBugs 不再报告这个 bug 了。
+      可能 bug 已被修复，可能 SpotBugs 进行了更新，总之，这段代码不会再报告这个 bug。
+      </p>]]>
+    </Details>
+  </BugPattern>
   <!--
   **********************************************************************
    BugCodes
@@ -9604,5 +9592,6 @@ Martin Buchholz <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=641
   <BugCode abbrev="PI">不要重用 Java 标准库的公开标识符</BugCode>
   <BugCode abbrev="ENV">使用环境变量替换了对应的 Java 属性</BugCode>
   <BugCode abbrev="HSM">避免方法隐藏</BugCode>
+  <BugCode abbrev="US">无用压制</BugCode>
 </MessageCollection>
 
