@@ -1875,6 +1875,13 @@ that have Exception or Throwable in their throws clause. </p>
       ]]>
     </Details>
   </Detector>
+  <Detector class="edu.umd.cs.findbugs.detect.UselessSuppressionDetector">
+    <Details>
+      <![CDATA[
+            <p> 查找不必使用的 edu.umd.cs.findbugs.annotations.NoteSuppressWarnings 注解</p>
+      ]]>
+    </Details>
+  </Detector>
 
   <!--
   **********************************************************************
