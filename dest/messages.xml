@@ -1093,6 +1093,7 @@
 
 
 
+
 </Details>
 </Detector>
 <Detector class="edu.umd.cs.findbugs.detect.FindRefComparison">
@@ -1882,6 +1883,13 @@
 
 </Details>
 </Detector>
+<Detector class="edu.umd.cs.findbugs.detect.BuildAccessMethodsDatabase">
+<Details>
+
+
+
+</Details>
+</Detector>
 
 
 
@@ -1937,6 +1945,7 @@
 <Details>
 
 
+<a href="https://cwe.mitre.org/data/definitions/1106.html"></a>
 
 </Details>
 </BugPattern>
@@ -1999,6 +2008,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/1339.html"></a>
 
 
 </Details>
@@ -2070,6 +2080,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/259.html"></a>
 
 
 </Details>
@@ -2082,6 +2093,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/259.html"></a>
 
 
 </Details>
@@ -2099,6 +2111,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/113.html"></a>
 
 
 </Details>
@@ -2116,6 +2129,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/113.html"></a>
 
 
 </Details>
@@ -2137,6 +2151,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/23.html"></a>
 
 
 </Details>
@@ -2156,6 +2171,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/36.html"></a>
 
 
 </Details>
@@ -2174,6 +2190,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/79.html"></a>
 
 
 </Details>
@@ -2194,6 +2211,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/81.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/79.html"></a>
 
 
 </Details>
@@ -2210,6 +2229,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/79.html"></a>
 
 
 </Details>
@@ -2239,6 +2260,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/835.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -2248,6 +2271,9 @@
 <Details>
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/674.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/835.html"></a>
 
 
 </Details>
@@ -2285,6 +2311,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/567.html"></a>
 
 
 </Details>
@@ -2343,7 +2371,6 @@
 <ShortDescription></ShortDescription>
 <LongDescription></LongDescription>
 <Details>
-
 
 
 
@@ -2464,6 +2491,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/1339.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -2558,6 +2587,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/580.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -2592,6 +2623,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/754.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -2602,6 +2635,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/754.html"></a>
 
 
 </Details>
@@ -2616,6 +2651,9 @@
 
 
 <a href="https://openjdk.org/jeps/411"></a><a href="https://openjdk.org/jeps/486"></a>
+
+
+<a href="https://cwe.mitre.org/data/definitions/266.html"></a>
 
 
 </Details>
@@ -2646,6 +2684,9 @@
 <a href="https://openjdk.org/jeps/411"></a><a href="https://openjdk.org/jeps/486"></a>
 
 
+<a href="https://cwe.mitre.org/data/definitions/266.html"></a>
+
+
 </Details>
 </BugPattern>
 <BugPattern type="JCIP_FIELD_ISNT_FINAL_IN_IMMUTABLE_CLASS">
@@ -2655,6 +2696,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/471.html"></a>
 
 
 </Details>
@@ -2716,6 +2759,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/382.html"></a>
 
 
 </Details>
@@ -2894,6 +2939,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/192.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3008,6 +3055,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/89.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3019,6 +3068,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/89.html"></a>
 
 
 </Details>
@@ -3044,6 +3095,7 @@
 
 
 </a>
+<a href="https://cwe.mitre.org/data/definitions/609.html"></a>
 
 </Details>
 </BugPattern>
@@ -3057,6 +3109,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/609.html"></a>
 
 
 </Details>
@@ -3089,6 +3143,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/583.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3098,6 +3154,8 @@
 <Details>
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/568.html"></a>
 
 
 </Details>
@@ -3110,6 +3168,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/568.html"></a>
 
 
 </Details>
@@ -3134,6 +3194,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/568.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3148,6 +3210,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/586.html"></a>
 
 
 </Details>
@@ -3285,6 +3349,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/486.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3309,6 +3375,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/486.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3319,6 +3387,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/571.html"></a>
 
 
 </Details>
@@ -3335,6 +3405,9 @@
 
 
 
+
+
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
 
 
 </Details>
@@ -3480,6 +3553,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/581.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3514,6 +3589,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/581.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3536,6 +3613,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/581.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3555,6 +3634,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/581.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3565,6 +3646,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/581.html"></a>
 
 
 </Details>
@@ -3592,6 +3675,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/595.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3604,6 +3689,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/595.html"></a>
 
 
 </Details>
@@ -3626,6 +3713,8 @@
 <Details>
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/366.html"></a>
 
 
 </Details>
@@ -3673,6 +3762,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/366.html"></a>
 
 
 </Details>
@@ -3720,6 +3810,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/374.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3734,6 +3826,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/374.html"></a>
 
 
 </Details>
@@ -3779,6 +3873,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/374.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3793,6 +3889,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/374.html"></a>
 
 
 </Details>
@@ -3820,6 +3918,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/572.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3831,6 +3931,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/662.html"></a>
 
 
 </Details>
@@ -3890,6 +3992,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/833.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3913,6 +4017,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/457.html"></a>
 
 
 </Details>
@@ -3952,6 +4058,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/457.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -3964,6 +4072,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/820.html"></a>
 
 
 </Details>
@@ -3994,6 +4104,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/457.html"></a>
 
 
 </Details>
@@ -4028,7 +4140,11 @@
 
 <a href="http://www.javalobby.org/java/forums/t96352.html"></a><a href="http://jira.codehaus.org/browse/JETTY-352"></a>
 
+
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused"></a>
+<a href="https://cwe.mitre.org/data/definitions/412.html"></a>
+
+
 
 </Details>
 </BugPattern>
@@ -4049,7 +4165,11 @@
 
 <a href="http://www.javalobby.org/java/forums/t96352.html"></a><a href="http://jira.codehaus.org/browse/JETTY-352"></a>
 
+
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused"></a>
+<a href="https://cwe.mitre.org/data/definitions/412.html"></a>
+
+
 
 </Details>
 </BugPattern>
@@ -4071,7 +4191,11 @@
 
 
 
+
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused"></a>
+<a href="https://cwe.mitre.org/data/definitions/412.html"></a>
+
+
 
 </Details>
 </BugPattern>
@@ -4099,6 +4223,11 @@
 
 
 
+<a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused"></a>
+<a href="https://cwe.mitre.org/data/definitions/412.html"></a>
+
+
+
 </Details>
 </BugPattern>
 <BugPattern type="DL_SYNCHRONIZATION_ON_BOXED_PRIMITIVE">
@@ -4117,7 +4246,10 @@
 
 
 
+
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused"></a>
+<a href="https://cwe.mitre.org/data/definitions/412.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4134,6 +4266,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/585.html"></a>
 
 
 </Details>
@@ -4186,6 +4320,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/821.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4197,6 +4333,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/821.html"></a>
 
 
 </Details>
@@ -4247,6 +4385,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/500.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4261,6 +4401,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/500.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4272,6 +4414,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/607.html"></a>
 
 
 </Details>
@@ -4609,6 +4753,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/252.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4625,6 +4771,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/252.html"></a>
 
 
 </Details>
@@ -4672,6 +4820,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/1066.html"></a>
 
 
 </Details>
@@ -4769,6 +4919,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/1066.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4778,6 +4930,8 @@
 <Details>
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/484.html"></a>
 
 
 </Details>
@@ -4792,6 +4946,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/478.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4802,6 +4958,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/484.html"></a>
 
 
 </Details>
@@ -4815,6 +4973,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/484.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4824,6 +4984,8 @@
 <Details>
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/820.html"></a>
 
 
 </Details>
@@ -4838,6 +5000,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/820.html"></a>
 
 
 </Details>
@@ -4959,6 +5123,8 @@
 <Details>
 
 
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4967,6 +5133,8 @@
 <LongDescription></LongDescription>
 <Details>
 
+
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
 
 
 </Details>
@@ -4980,6 +5148,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -4991,6 +5161,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
 
 
 </Details>
@@ -5025,6 +5197,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/457.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -5034,6 +5208,8 @@
 <Details>
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/457.html"></a>
 
 
 </Details>
@@ -5094,6 +5270,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/457.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -5106,6 +5284,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/457.html"></a>
 
 
 </Details>
@@ -5150,6 +5330,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/457.html"></a>
 
 
 </Details>
@@ -5248,6 +5430,9 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/571.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -5257,6 +5442,9 @@
 <Details>
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/571.html"></a>
 
 
 </Details>
@@ -5290,6 +5478,7 @@
 <ShortDescription></ShortDescription>
 <LongDescription></LongDescription>
 <Details>
+
 
 
 
@@ -5363,7 +5552,6 @@
 
 
 
-
 </Details>
 </BugPattern>
 
@@ -5408,6 +5596,9 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/252.html"></a>
+
+
 </Details>
 </BugPattern>
 
@@ -5425,6 +5616,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/253.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -5436,6 +5629,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/253.html"></a>
 
 
 </Details>
@@ -5723,6 +5918,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/459.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -5736,6 +5933,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/459.html"></a>
 
 
 </Details>
@@ -5862,6 +6061,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/413.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/459.html"></a>
 
 </Details>
 </BugPattern>
@@ -5882,6 +6083,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/413.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/459.html"></a>
 
 </Details>
 </BugPattern>
@@ -5903,6 +6106,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/595.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -5917,6 +6122,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/595.html"></a>
 
 
 </Details>
@@ -5933,6 +6140,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/595.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -5943,6 +6152,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
 
 
 </Details>
@@ -5958,6 +6169,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
 
 
 </Details>
@@ -5979,6 +6192,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
 
 
 </Details>
@@ -6002,6 +6217,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -6012,6 +6229,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
 
 
 </Details>
@@ -6187,6 +6406,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/683.html"></a>
 
 
 </Details>
@@ -6490,6 +6711,8 @@
 
 <a href="http://www.cs.umd.edu/~pugh/java/memoryModel/"></a>
 
+<a href="https://cwe.mitre.org/data/definitions/543.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -6507,6 +6730,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/543.html"></a>
 
 
 </Details>
@@ -6571,6 +6796,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/561.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -6585,6 +6812,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/561.html"></a>
 
 
 </Details>
@@ -6602,6 +6831,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/459.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -6616,6 +6847,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/459.html"></a>
 
 
 </Details>
@@ -6897,6 +7130,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -6937,6 +7172,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -6951,6 +7188,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
 
 
 </Details>
@@ -6971,6 +7210,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -6984,6 +7225,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -6996,6 +7239,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
 
 
 </Details>
@@ -7018,6 +7263,8 @@
 <a href="http://www.oracle.com/technetwork/java/javase/compatibility-137462.html#literal"></a>
 
 
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -7029,6 +7276,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
 
 
 </Details>
@@ -7100,6 +7349,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/396.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -7134,6 +7385,9 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/395.html"></a>
+
+
 </Details>
 </BugPattern>
 <BugPattern type="FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER">
@@ -7152,6 +7406,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/570.html"></a>
 
 
 </Details>
@@ -7355,6 +7611,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/192.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -7383,6 +7641,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/192.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -7401,6 +7661,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/192.html"></a>
 
 
 </Details>
@@ -7421,6 +7682,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/192.html"></a>
 
 
 </Details>
@@ -7447,6 +7709,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/192.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -7458,6 +7722,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/579.html"></a>
 
 
 </Details>
@@ -7563,6 +7829,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/704.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -7591,6 +7859,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/704.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -7604,6 +7874,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/704.html"></a>
 
 
 </Details>
@@ -7633,6 +7905,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/704.html"></a>
 
 
 </Details>
@@ -7673,6 +7947,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/571.html"></a>
 
 
 </Details>
@@ -7739,6 +8015,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/185.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -7751,6 +8029,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/185.html"></a>
 
 
 </Details>
@@ -7769,6 +8049,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/185.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -7781,6 +8063,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/563.html"></a>
 
 
 </Details>
@@ -7795,6 +8079,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/192.html"></a>
 
 
 </Details>
@@ -7951,6 +8237,17 @@
 
 </Details>
 </BugPattern>
+<BugPattern type="DMI_MISLEADING_SUBSTRING">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+</Details>
+</BugPattern>
 <BugPattern type="DMI_CALLING_NEXT_FROM_HASNEXT">
 <ShortDescription></ShortDescription>
 <LongDescription></LongDescription>
@@ -7976,6 +8273,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/667.html"></a>
 
 </Details>
 </BugPattern>
@@ -7988,6 +8286,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/1041.html"></a>
 
 </Details>
 </BugPattern>
@@ -8001,6 +8300,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/1041.html"></a>
 
 </Details>
 </BugPattern>
@@ -8085,6 +8385,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/481.html"></a>
 
 
 </Details>
@@ -8487,6 +8789,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/821.html"></a>
+
 
 </Details>
 </BugPattern>
@@ -8635,6 +8939,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/252.html"></a>
 
 </Details>
 </BugPattern>
@@ -8681,6 +8986,12 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/362.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/366.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/662.html"></a>
+
+
 </Details>
 </BugPattern>
 <BugPattern type="AT_UNSAFE_RESOURCE_ACCESS_IN_THREAD">
@@ -8696,6 +9007,11 @@
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/VNA04-J.+Ensure+that+calls+to+chained+methods+are+atomic">
 </a>
 
+
+<a href="https://cwe.mitre.org/data/definitions/362.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/366.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/662.html"></a>
+
 </Details>
 </BugPattern>
 <BugPattern type="DM_DEFAULT_ENCODING">
@@ -8706,6 +9022,8 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/173.html"></a>
 
 
 </Details>
@@ -8777,6 +9095,9 @@
 
 
 
+
+<a href="https://cwe.mitre.org/data/definitions/470.html"></a>
+
 </Details>
 </BugPattern>
 <BugPattern type="REFLF_REFLECTION_MAY_INCREASE_ACCESSIBILITY_OF_FIELD">
@@ -8791,6 +9112,9 @@
 
 
 
+
+
+<a href="https://cwe.mitre.org/data/definitions/470.html"></a>
 
 </Details>
 </BugPattern>
@@ -8849,6 +9173,7 @@
 <br><br>
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+<a href="https://cwe.mitre.org/data/definitions/543.html"></a>
 
 </Details>
 </BugPattern>
@@ -8862,6 +9187,7 @@
 <br><br>
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+<a href="https://cwe.mitre.org/data/definitions/543.html"></a>
 
 </Details>
 </BugPattern>
@@ -8876,6 +9202,7 @@
 <br><br>
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+<a href="https://cwe.mitre.org/data/definitions/543.html"></a>
 
 </Details>
 </BugPattern>
@@ -8889,6 +9216,7 @@
 <br><br>
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+<a href="https://cwe.mitre.org/data/definitions/543.html"></a>
 
 </Details>
 </BugPattern>
@@ -8902,6 +9230,7 @@
 <br><br>
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+<a href="https://cwe.mitre.org/data/definitions/543.html"></a>
 
 </Details>
 </BugPattern>
@@ -8915,6 +9244,7 @@
 <br><br>
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/MSC07-J.+Prevent+multiple+instantiations+of+singleton+objects"></a>
+<a href="https://cwe.mitre.org/data/definitions/543.html"></a>
 
 </Details>
 </BugPattern>
@@ -8932,6 +9262,7 @@
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/LCK06-J.+Do+not+use+an+instance+lock+to+protect+shared+static+data">
 </a>
+<a href="https://cwe.mitre.org/data/definitions/667.html"></a>
 
 </Details>
 </BugPattern>
@@ -8942,6 +9273,7 @@
 <![CDATA[<p>
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/NUM09-J.+Do+not+use+floating-point+variables+as+loop+counters"></a>
+<a href="https://cwe.mitre.org/data/definitions/1339.html"></a>
 
 </Details>
 </BugPattern>
@@ -8961,6 +9293,8 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/397.html"></a>
+
 </Details>
 </BugPattern>
 <BugPattern type="THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION">
@@ -8977,6 +9311,8 @@
 <br><br>
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable"></a>
+
+<a href="https://cwe.mitre.org/data/definitions/397.html"></a>
 
 </Details>
 </BugPattern>
@@ -8995,6 +9331,8 @@
 <br><br>
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/ERR07-J.+Do+not+throw+RuntimeException%2C+Exception%2C+or+Throwable"></a>
+
+<a href="https://cwe.mitre.org/data/definitions/397.html"></a>
 
 </Details>
 </BugPattern>
@@ -9030,6 +9368,8 @@
 
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/SEC02-J.+Do+not+base+security+checks+on+untrusted+sources"></a>
+<a href="https://cwe.mitre.org/data/definitions/302.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/470.html"></a>
 
 
 <a href="https://openjdk.org/jeps/411"></a><a href="https://openjdk.org/jeps/486"></a>
@@ -9084,6 +9424,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/766.html"></a>
 
 </Details>
 </BugPattern>
@@ -9104,6 +9445,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/766.html"></a>
 
 </Details>
 </BugPattern>
@@ -9125,6 +9467,7 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/766.html"></a>
 
 </Details>
 </BugPattern>
@@ -9151,6 +9494,7 @@
 
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/MET01-J.+Never+use+assertions+to+validate+method+arguments"></a>
+<a href="https://cwe.mitre.org/data/definitions/617.html"></a>
 
 
 
@@ -9318,6 +9662,32 @@
 
 </Details>
 </BugPattern>
+<BugPattern type="CWO_CLOSED_WITHOUT_OPENED">
+<ShortDescription></ShortDescription>
+<LongDescription></LongDescription>
+<Details>
+
+
+
+
+
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/Lock.html#lock--"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Details>
+</BugPattern>
 <BugPattern type="AT_NONATOMIC_64BIT_PRIMITIVE">
 <ShortDescription></ShortDescription>
 <LongDescription></LongDescription>
@@ -9327,6 +9697,7 @@
 
 <a href="https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.7"></a>
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/VNA05-J.+Ensure+atomicity+when+reading+and+writing+64-bit+values"></a>
+<a href="https://cwe.mitre.org/data/definitions/667.html"></a>
 
 
 
@@ -9353,6 +9724,11 @@
 
 
 
+<a href="https://cwe.mitre.org/data/definitions/413.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/567.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/667.html"></a>
+
+
 </Details>
 </BugPattern>
 <BugPattern type="AT_NONATOMIC_OPERATIONS_ON_SHARED_VARIABLE">
@@ -9364,6 +9740,10 @@
 
 
 <a href="https://wiki.sei.cmu.edu/confluence/display/java/VNA02-J.+Ensure+that+compound+operations+on+shared+variables+are+atomic"></a>
+<a href="https://cwe.mitre.org/data/definitions/366.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/413.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/567.html"></a>
+<a href="https://cwe.mitre.org/data/definitions/667.html"></a>
 
 
 
@@ -9383,6 +9763,7 @@
 
 
 
+
 </Details>
 </BugPattern>
 
@@ -9391,6 +9772,7 @@
 <LongDescription></LongDescription>
 <Details>
 <![CDATA[<p>
+
 
 
 
@@ -9409,6 +9791,7 @@
 
 
 
+
 </Details>
 </BugPattern>
 
@@ -9422,6 +9805,7 @@
 
 
 
+
 </Details>
 </BugPattern>
 
@@ -9430,6 +9814,7 @@
 <LongDescription></LongDescription>
 <Details>
 <![CDATA[<p>
+
 
 
 
@@ -9598,6 +9983,7 @@
 <BugCode abbrev="AA"></BugCode>
 <BugCode abbrev="PI"></BugCode>
 <BugCode abbrev="ENV"></BugCode>
+<BugCode abbrev="CWO"></BugCode>
 <BugCode abbrev="HSM"></BugCode>
 <BugCode abbrev="US"></BugCode>
 </MessageCollection>
