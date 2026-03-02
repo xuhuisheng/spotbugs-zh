@@ -2258,8 +2258,8 @@ that have Exception or Throwable in their throws clause. </p>
     <LongDescription>{1}中有一个明显的无限循环</LongDescription>
     <Details>
 <![CDATA[
-<p>这个循环似乎没有终止的方法（除了抛出异常之外）</p>
-
+<p>这个循环似乎没有终止的方法（除了抛出异常之外）
+像<code>while (true) {...}</code>这样的无条件循环被视为有意为之，不会被报告为错误。</p>
 <p>参考 <a href="https://cwe.mitre.org/data/definitions/835.html">CWE-835: 具有不可达退出条件的循环（“有限循环”）</a>.
 </p>
 ]]>
